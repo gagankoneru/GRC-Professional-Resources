@@ -1,51 +1,45 @@
 # GRC Professional Resources
 
-A practitioner-focused collection of cybersecurity governance, risk, compliance, assurance, and AI governance resources designed to help security teams translate standards into operational controls.
+A practitioner-focused collection of cybersecurity governance, risk, compliance, assurance, and security-engineering resources designed to help teams translate standards into operational controls.
 
 ## Purpose
 
 Security programs often struggle not because frameworks are unavailable, but because teams need practical ways to turn requirements into repeatable engineering and governance workflows.
 
-This repository is intended to bridge that gap through reusable templates, control mappings, assessment methods, implementation notes, and security-governance patterns.
+This repository bridges that gap through reusable implementation playbooks, control matrices, assessment methods, evidence models, and security-governance patterns.
+
+## Available Resources
+
+### PCI DSS
+
+- **[PCI DSS v4.0.1 Implementation Playbook](pci-dss/PCI-DSS-4.0.1-IMPLEMENTATION-PLAYBOOK.md)** — operating model for scope, ownership, controls, evidence, validation, remediation, metrics, and continuous assurance.
+- **[PCI DSS Evidence Catalogue](pci-dss/PCI-DSS-EVIDENCE-CATALOGUE.md)** — reusable evidence patterns, source systems, collection methods, evidence-quality tests, and an evidence maturity model.
+
+### Secure SDLC
+
+- **[Secure SDLC Control Matrix](secure-sdlc/SECURE-SDLC-CONTROL-MATRIX.md)** — risk-tiered controls across planning, design, build, test, release, operations, and continuous improvement.
+- **[Security Gates Checklist](secure-sdlc/SECURITY-GATES-CHECKLIST.md)** — practical design, build, validation, production-readiness, and post-release security gates.
+
+### AI Governance & Security
+
+- **[AI System Risk Assessment](ai-governance/AI-SYSTEM-RISK-ASSESSMENT.md)** — generic practitioner methodology for assessing AI-system architecture, trust boundaries, authority, data, security controls, testing, evidence, and residual risk.
+
+All published resources in this repository are independent practitioner materials intended for open professional collaboration. They do not contain employer-confidential or proprietary framework material.
 
 ## Focus Areas
 
 - Cybersecurity governance and operating models
+- PCI DSS and payment-security assurance
+- Secure software development lifecycle (Secure SDLC)
 - Enterprise risk and control design
 - ISO 27001 and security assurance
 - Cloud and third-party risk
 - Identity and access governance
 - Vulnerability and remediation governance
-- AI governance, AI security, and responsible adoption
+- AI governance and AI security
 - Security metrics, KRIs, and executive reporting
 - Audit readiness and evidence management
 - Policy-as-code and opportunities to automate GRC workflows
-
-## Planned Resources
-
-### Governance
-- Security governance operating model
-- Risk committee and executive reporting templates
-- Security metrics and KRI catalogue
-- Exception and risk-acceptance workflow
-
-### Assurance & Compliance
-- ISO 27001 control implementation notes
-- Evidence collection checklist
-- Audit readiness tracker
-- Cross-framework control mapping examples
-
-### AI Governance & Security
-- AI system governance lifecycle
-- AI risk assessment template
-- Secure AI adoption checklist
-- Agentic AI governance and control patterns
-
-### Engineering-Friendly GRC
-- Control definitions written for engineering teams
-- Policy-as-code examples
-- Automated evidence collection concepts
-- Security control validation patterns
 
 ## Design Principles
 
@@ -57,6 +51,19 @@ Resources in this repository should be:
 4. **Measurable** — controls should have observable evidence and outcomes.
 5. **Open to challenge** — feedback, alternative implementations, and contributions are welcome.
 
+## Planned Resources
+
+Future public resources may include:
+
+- security governance operating model;
+- security metrics and KRI catalogue;
+- risk and security-exception workflow;
+- vulnerability remediation governance model;
+- identity and access governance patterns;
+- cross-framework control mapping examples;
+- policy-as-code examples;
+- automated assurance and control-validation patterns.
+
 ## Contributing
 
 Community discussion is encouraged. If you see a better way to structure a control, automate an assurance activity, or translate a governance requirement into an engineering workflow, please open an issue or propose a change.
@@ -65,10 +72,10 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidance.
 
 ## About the Maintainer
 
-Maintained by **Gagan Koneru** (`@gagankoneru`), a cybersecurity and GRC practitioner focused on enterprise security governance, assurance, risk management, and the governance of emerging technologies.
+Maintained by **Gagan Koneru** (`@gagankoneru`), a cybersecurity and GRC practitioner focused on enterprise security governance, assurance, risk management, secure delivery, and emerging-technology governance.
 
-The goal is to make security governance more useful to the people who actually build and operate technology.
+The goal is to make security governance more useful to the people who build and operate technology.
 
 ## Disclaimer
 
-These resources are provided for educational and professional collaboration purposes. They are not legal advice, certification guidance, or a substitute for organization-specific risk assessment.
+These resources are provided for educational and professional collaboration purposes. They are not legal advice, certification guidance, official standards interpretations, or a substitute for organization-specific risk assessment or qualified assessor advice.
