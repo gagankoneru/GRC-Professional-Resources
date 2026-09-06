@@ -1,20 +1,14 @@
-# PCI DSS Practitioner Resources
+# PCI DSS Governance and Assurance
 
-Independent practitioner resources for operationalizing PCI DSS through ownership, evidence, security engineering, and continuous assurance.
+[Resource library](../README.md)
 
-## Resources
+Resources for PCI program accountability, scope decisions, control ownership, evidence oversight, and assessment readiness.
 
-- [PCI DSS v4.0.1 Implementation Playbook](PCI-DSS-4.0.1-IMPLEMENTATION-PLAYBOOK.md)
-- [PCI DSS Evidence Catalogue](PCI-DSS-EVIDENCE-CATALOGUE.md)
+- [PCI DSS v4.0.1 Governance Playbook](PCI-DSS-4.0.1-GOVERNANCE-PLAYBOOK.md)
+- [Scoping Questionnaire](SCOPING-QUESTIONNAIRE.md)
+- [Control Owner Register](CONTROL-OWNER-REGISTER-TEMPLATE.md)
+- [Evidence Catalogue](PCI-DSS-EVIDENCE-CATALOGUE.md)
 
-## Community questions
+Technical implementation is handled by the relevant domain teams. This repository records their responsibilities and the assurance evidence needed to evaluate outcomes.
 
-Feedback is especially welcome on:
-
-- how teams maintain accurate CDE scope in cloud and hybrid environments;
-- evidence that assessors and engineering teams both find useful;
-- ways to automate recurring control validation;
-- integration between PCI DSS and Secure SDLC controls;
-- metrics that indicate real payment-security health rather than assessment preparation activity.
-
-These resources intentionally avoid reproducing PCI DSS requirement text. Refer to PCI SSC for authoritative standards and assessment materials.
+Use the [PCI SSC Document Library](https://www.pcisecuritystandards.org/document_library/) for PCI DSS v4.0.1, applicable assessment documents, and official guidance. These resources neither reproduce the standard nor replace an assessor's evaluation or the compliance program requirements of the relevant payment brands/acquirer.

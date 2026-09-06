@@ -1,21 +1,15 @@
-# PCI DSS Control Owner Register Template
+# PCI DSS Control Owner Register
 
-A lightweight template for assigning operational accountability for payment-security controls.
+[PCI DSS resources](README.md)
 
-| Control ID | PCI mapping | Control objective | In-scope systems/processes | Accountable owner | Control operator | Frequency | Evidence source | Validation method | Failure escalation | Exception reference |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| PCI-001 |  |  |  |  |  |  |  |  |  |  |
-| PCI-002 |  |  |  |  |  |  |  |  |  |  |
-| PCI-003 |  |  |  |  |  |  |  |  |  |  |
+| Control ID | Exact PCI reference / version | Objective | Scope | Accountable owner | Operator | Evidence custodian | Frequency / authoritative basis | Evidence ID | Assessor / criteria | Failure escalation | Finding ID |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| | | | | | | | | | | | |
 
-## Usage guidance
+## Use
 
-A strong control record should distinguish:
+Assign a named accountable person or role with an identified incumbent for each control. Distinguish operation, evidence custody, and assessment. Resolve shared responsibilities explicitly, including supplier and customer duties.
 
-- **accountability** — who is answerable for the control outcome;
-- **operation** — who or what actually performs the activity;
-- **evidence** — how operation can be independently observed;
-- **validation** — how the organization confirms that the control is effective;
-- **failure handling** — what happens when the expected control state is not achieved.
+Record ownership acceptance, effective date, delegate, and next review in the controlled register. Escalate vacancies and missed activities. Link evidence and findings without storing confidential operational records here.
 
-Avoid assigning every control to the security or compliance team. Technical control ownership should normally sit with the team capable of changing the relevant technology, while security/GRC provides governance, challenge, testing, and assurance.
+Control ownership and risk acceptance are governance records; neither alone establishes compliance.

@@ -1,26 +1,23 @@
 # Contributing
 
-Contributions, critiques, and implementation examples are welcome.
+Contributions should improve governance, risk, compliance, or assurance practice.
 
-## Good contribution areas
+## Useful contributions
 
-- Improve a governance or control pattern
-- Add a practical implementation example
-- Map a control to a relevant security framework or standard
-- Suggest a measurable outcome or evidence source
-- Add an engineering-friendly automation approach
-- Identify an ambiguity, limitation, or unintended consequence
+- Clarify decision rights, ownership, risk criteria, or escalation.
+- Improve policy, exception, supplier, control, evidence, or audit templates.
+- Propose a mapping with exact framework version, authoritative reference, rationale, limits, and review date.
+- Improve a metric's calculation, data quality checks, or management action.
 
-## How to contribute
+## Contribution checklist
 
-1. Open an issue describing the problem, use case, or proposed improvement.
-2. Where possible, explain the risk or operational problem the change addresses.
-3. Propose a concrete improvement rather than a purely stylistic change.
-4. For substantial additions, include sources or implementation rationale.
-5. Keep organization-specific confidential information out of contributions.
+1. Explain the GRC problem and intended audience.
+2. Identify which decision or assurance outcome the change supports.
+3. Use fictional examples and original wording. Do not submit IISST/AITSF proprietary content, employer/client information, credentials, real evidence, or restricted standard text.
+4. Cite public primary sources for framework or regulatory claims. Distinguish a suggested practice from a mandatory obligation.
+5. Check relative links and ensure roadmap claims match files that exist.
+6. Record material changes in scope, assumptions, versions, or methodology.
 
-## Review principles
+Secure SDLC implementation, security configuration, attack/testing procedures, and AI security engineering should be proposed in separate domain repositories. Evidence descriptions are welcome when they explain what an assessor reviews.
 
-Contributions are assessed for practical usefulness, technical accuracy, traceability to risk, and clarity for both security and engineering audiences.
-
-Constructive disagreement is encouraged. Security governance improves when assumptions can be challenged in public.
+Review contributions for accuracy, practicality, confidentiality, traceability, and clear limits. Never infer that a mapping or accepted risk proves compliance.

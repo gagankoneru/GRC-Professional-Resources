@@ -1,105 +1,35 @@
-# PCI DSS Scoping Questionnaire
+# PCI DSS Scoping Governance Questionnaire
 
-A practitioner questionnaire to support discovery of payment-data flows, connected systems, security-impacting systems, and third-party dependencies before formal assessment.
+[PCI DSS resources](README.md)
 
-> This is an independent discovery aid, not an official PCI SSC scoping document.
+Coordinate the scope decision and obtain supporting evidence from qualified specialists. This questionnaire does not replace official scoping requirements or prescribe how to implement segmentation or data discovery.
 
-## Payment flow
+## Business and payment context
 
-- Where does payment/account data first enter the environment?
-- Which applications, APIs, queues, databases or services process it?
-- Where can it be stored temporarily or permanently?
-- Which logs, backups, analytics systems or support tools may receive copies?
-- Where does the data leave the organization?
-- Which parties receive it?
+- Which legal entities, locations, channels, and services are being assessed?
+- Where is account data stored, processed, or transmitted according to current evidence?
+- Who owns each payment process and the completeness of its inventory?
 
-## Architecture
+## Dependencies and service providers
 
-- Which network segments contain CDE assets?
-- Which systems can initiate connections into those segments?
-- Which systems receive connections from the CDE?
-- Which administrative platforms can change CDE configurations?
-- Which identity platforms authenticate CDE users or administrators?
-- Which DNS, certificate, secrets, logging, endpoint, vulnerability or deployment platforms can materially affect CDE security?
+- Which systems or services connect to or may affect the security of the cardholder data environment?
+- Which shared administration and support services require specialist scope review?
+- Which suppliers perform relevant functions, and how are responsibilities allocated?
+- Does supplier assurance cover the exact service, scope, and relevant period?
 
-## Cloud and platform services
+## Exclusions and unresolved assumptions
 
-- Which cloud accounts/subscriptions/projects host payment-related workloads?
-- Are shared management planes used by both CDE and non-CDE workloads?
-- Which IAM roles can administer those resources?
-- Which CI/CD systems can deploy to the CDE?
-- Which secret stores/KMS services provide credentials or keys?
-- Which container registries, artifact stores or package sources feed CDE workloads?
+- What evidence supports each proposed exclusion?
+- Where scope reduction relies on segmentation, what current specialist validation supports it?
+- Are there unknown data locations, dependencies, or discrepancies between records?
+- Who will resolve each uncertainty, and by when?
 
-## Third parties
+## Scope decision record
 
-For each service provider, identify:
+| Item / service | Proposed scope status | Rationale | Supporting evidence / date | Specialist reviewer | Decision owner / date | Open action | Reassessment trigger |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| | | | | | | | |
 
-- service provided;
-- whether account data is stored, processed or transmitted;
-- whether the provider can affect CDE security;
-- connection method;
-- responsibility split;
-- relevant compliance/assurance evidence;
-- incident-notification route;
-- contract owner.
+Maintain references to the approved inventory, data-flow records, relevant dependencies, supplier responsibilities, and validation evidence in private storage. Track unresolved items explicitly.
 
-## Scope reduction and segmentation
-
-- What technical boundary is being relied upon to exclude systems from scope?
-- Is the boundary enforced by configuration or merely by process?
-- Can credentials or administrative tooling cross the boundary?
-- Has segmentation been independently tested?
-- Can changes to cloud networking or routing silently invalidate the boundary?
-- Is there monitoring for configuration drift?
-
-## Data discovery
-
-Search beyond expected databases. Consider:
-
-- application logs;
-- debug traces;
-- support tickets;
-- message queues;
-- data lakes;
-- analytics platforms;
-- backups/snapshots;
-- object storage;
-- developer/test environments;
-- exported reports;
-- local administrator workstations.
-
-## Scoping output
-
-The scoping process should produce at least:
-
-```text
-CDE system inventory:
-Connected/security-impacting system inventory:
-Payment-data flow diagram:
-Network/trust-boundary diagram:
-Third-party inventory:
-Identity/administration dependencies:
-Scope exclusions and technical rationale:
-Segmentation evidence:
-Outstanding discovery questions:
-Scope owner:
-Review date:
-```
-
-## Trigger events for scope reassessment
-
-Revisit scope when there is:
-
-- a new payment channel;
-- major architecture or cloud migration;
-- a new third party;
-- a change to authentication/administration tooling;
-- new connectivity into the CDE;
-- acquisition or organizational integration;
-- new logging/analytics destination;
-- material CI/CD change;
-- segmentation redesign;
-- discovery of previously unknown account-data storage.
-
-PCI scoping should be treated as a living architecture record rather than an annual questionnaire.
+Revisit scope on material changes and at the required intervals. Obtain requirements and official guidance from the [PCI SSC Document Library](https://www.pcisecuritystandards.org/document_library/).
